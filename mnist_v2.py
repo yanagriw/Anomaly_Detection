@@ -2,7 +2,6 @@ import os
 import sys
 from typing import Any, Callable, Iterator, TypedDict
 import urllib.request
-
 import numpy as np
 import torch
 
