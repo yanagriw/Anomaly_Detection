@@ -3,7 +3,7 @@ This repository contains two implementations for anomaly detection on image data
 
 ## Repository Contents
 - `vae.py`: Implements a VAE model that learns to reconstruct normal images. Anomalies are detected based on high reconstruction error.
-- `gan.py`: Implements a DCGAN model with a generator and discriminator for anomaly detection. The discriminator's confidence score serves as an anomaly indicator.
+- `dcgan.py`: Implements a DCGAN model with a generator and discriminator for anomaly detection. The discriminator's confidence score serves as an anomaly indicator.
 
 ## Usage 
 1. Clone the repository:
@@ -19,8 +19,8 @@ cd anomaly-detection
   ```
 - GAN:
   ```
-  python gan.py --train  # Train the GAN
-  python gan.py  # Evaluate the GAN on test data
+  python dcgan.py --train  # Train the GAN
+  python dcgan.py  # Evaluate the GAN on test data
   ```
 ## Model Saving
 Each model saves the trained weights as:
